@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# PyTorch
+checkpoints/
+*.pth
+*.pt
+
+# Data
+data/
+
+# Outputs
+outputs/
+runs/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
