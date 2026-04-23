@@ -146,13 +146,13 @@ def _plot_reconstruction(originals: torch.Tensor, reconstructed: torch.Tensor, o
 
     for i in range(n):
         # Original
-        img = originals[i].permute(1, 2, 0).numpy()
+        img = originals[i].float().permute(1, 2, 0).numpy()
         img = np.clip(img, 0, 1)
         axes[0, i].imshow(img)
         axes[0, i].axis("off")
 
         # Reconstructed
-        rec = reconstructed[i].permute(1, 2, 0).numpy()
+        rec = reconstructed[i].float().permute(1, 2, 0).numpy()
         rec = np.clip(rec, 0, 1)
         axes[1, i].imshow(rec)
         axes[1, i].axis("off")

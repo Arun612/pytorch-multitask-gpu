@@ -70,11 +70,11 @@ class CustomCNNBackbone(nn.Module):
             # First conv layer
             nn.Conv2d(in_ch, out_ch, kernel_size=3, padding=1, bias=False),
             nn.BatchNorm2d(out_ch),
-            nn.ReLU(inplace=True),
+            nn.ReLU(),
             # Second conv layer (deepens the block)
             nn.Conv2d(out_ch, out_ch, kernel_size=3, padding=1, bias=False),
             nn.BatchNorm2d(out_ch),
-            nn.ReLU(inplace=True),
+            nn.ReLU(),
             # Spatial downsampling
             nn.MaxPool2d(kernel_size=2, stride=2),
         )

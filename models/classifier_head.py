@@ -55,7 +55,7 @@ class ClassifierHead(nn.Module):
             layers.extend([
                 nn.Linear(in_dim, hidden_dim),
                 nn.BatchNorm1d(hidden_dim),   # BN stabilizes training
-                nn.ReLU(inplace=True),
+                nn.ReLU(),
                 nn.Dropout(p=dropout),         # Dropout prevents overfitting
             ])
             in_dim = hidden_dim

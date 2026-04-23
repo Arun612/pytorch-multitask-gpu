@@ -40,7 +40,7 @@ class DecoderHead(nn.Module):
         # feature_dim → hidden_dim * 2 * 2 (to reshape into [B, hidden_dim, 2, 2])
         self.fc = nn.Sequential(
             nn.Linear(feature_dim, hidden_dim * 2 * 2),
-            nn.ReLU(inplace=True),
+            nn.ReLU(),
         )
 
         # ── Upsampling decoder using transposed convolutions ──
@@ -49,22 +49,22 @@ class DecoderHead(nn.Module):
             # [B, 256, 2, 2] → [B, 128, 4, 4]
             nn.ConvTranspose2d(hidden_dim, 128, kernel_size=4, stride=2, padding=1),
             nn.BatchNorm2d(128),
-            nn.ReLU(inplace=True),
+            nn.ReLU(),
 
             # [B, 128, 4, 4] → [B, 64, 8, 8]
             nn.ConvTranspose2d(128, 64, kernel_size=4, stride=2, padding=1),
             nn.BatchNorm2d(64),
-            nn.ReLU(inplace=True),
+            nn.ReLU(),
 
             # [B, 64, 8, 8] → [B, 32, 16, 16]
             nn.ConvTranspose2d(64, 32, kernel_size=4, stride=2, padding=1),
             nn.BatchNorm2d(32),
-            nn.ReLU(inplace=True),
+            nn.ReLU(),
 
             # [B, 32, 16, 16] → [B, 16, 32, 32]
             nn.ConvTranspose2d(32, 16, kernel_size=4, stride=2, padding=1),
             nn.BatchNorm2d(16),
-            nn.ReLU(inplace=True),
+            nn.ReLU(),
 
             # Final conv to get 3 channels (RGB)
             # [B, 16, 32, 32] → [B, 3, 32, 32]
