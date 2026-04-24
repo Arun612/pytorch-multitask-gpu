@@ -1,0 +1,8 @@
+artifact_location: /home/b230639ee/ar_torch/pytorch-multitask-gpu/mlruns/472851765419561405
+creation_time: 1777026893772
+experiment_id: '472851765419561405'
+last_update_time: 1777026893772
+lifecycle_stage: active
+name: multitask-cifar10
+trace_location: null
+workspace: default

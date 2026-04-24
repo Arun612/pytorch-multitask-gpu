@@ -1,0 +1,23 @@
+artifact_path: /home/b230639ee/ar_torch/pytorch-multitask-gpu/mlruns/472851765419561405/models/m-29bdcbe741d74ba6b64d65003cdfc80e/artifacts
+flavors:
+  python_function:
+    artifacts:
+      pytorch_model:
+        path: artifacts/temp_model
+        uri: mlruns/temp_model
+    cloudpickle_version: 3.1.2
+    code: null
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pyfunc.model
+    python_model: python_model.pkl
+    python_version: 3.10.12
+    streamable: false
+mlflow_version: 3.11.1
+model_id: m-29bdcbe741d74ba6b64d65003cdfc80e
+model_size_bytes: 50344227
+model_uuid: m-29bdcbe741d74ba6b64d65003cdfc80e
+prompts: null
+run_id: be9982a1296e4687beab6f8d87fdef75
+utc_time_created: '2026-04-24 10:50:50.736534'

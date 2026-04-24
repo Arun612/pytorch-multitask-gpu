@@ -1,0 +1,16 @@
+creation_timestamp: 1777027850923
+current_stage: None
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1777027850923
+model_id: m-29bdcbe741d74ba6b64d65003cdfc80e
+name: MultiTaskCIFAR10
+run_id: be9982a1296e4687beab6f8d87fdef75
+run_link: null
+source: models:/m-29bdcbe741d74ba6b64d65003cdfc80e
+status: READY
+status_message: null
+storage_location: /home/b230639ee/ar_torch/pytorch-multitask-gpu/mlruns/472851765419561405/models/m-29bdcbe741d74ba6b64d65003cdfc80e/artifacts
+user_id: null
+version: 1
+workspace: default

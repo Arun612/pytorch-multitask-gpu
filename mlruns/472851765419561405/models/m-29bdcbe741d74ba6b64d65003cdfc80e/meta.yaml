@@ -1,0 +1,10 @@
+artifact_location: /home/b230639ee/ar_torch/pytorch-multitask-gpu/mlruns/472851765419561405/models/m-29bdcbe741d74ba6b64d65003cdfc80e/artifacts
+creation_timestamp: 1777027850722
+experiment_id: '472851765419561405'
+last_updated_timestamp: 1777027850907
+model_id: m-29bdcbe741d74ba6b64d65003cdfc80e
+model_type: null
+name: multitask-served
+source_run_id: be9982a1296e4687beab6f8d87fdef75
+status: 2
+status_message: null

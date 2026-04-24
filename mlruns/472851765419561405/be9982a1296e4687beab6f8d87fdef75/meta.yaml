@@ -1,0 +1,14 @@
+artifact_uri: /home/b230639ee/ar_torch/pytorch-multitask-gpu/mlruns/472851765419561405/be9982a1296e4687beab6f8d87fdef75/artifacts
+end_time: 1777027850986
+entry_point_name: ''
+experiment_id: '472851765419561405'
+lifecycle_stage: active
+run_id: be9982a1296e4687beab6f8d87fdef75
+run_name: resnet18-run
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1777026893839
+status: 3
+tags: []
+user_id: b230639ee
